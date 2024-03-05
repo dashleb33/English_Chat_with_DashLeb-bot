@@ -2,7 +2,7 @@
 
 ## Пример развертывания приложения в ранее созданной и активной виртуальной машине в Яндекс.Облаке
 ## Рекомендуемые ресурсы виртуальной машины:
-![Рекомендуемые ресурсы виртуальной машины](https://github.com/dashleb33/English_Chat_with_DashLeb_bot/blob/36297844e25747b2d2346cfb6abd20e2d3ead3f4/%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D0%BC%D1%8B%D0%B5%20%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.png)
+![Рекомендуемые ресурсы виртуальной машины](https://github.com/dashleb33/English_Chat_with_DashLeb-bot/blob/36297844e25747b2d2346cfb6abd20e2d3ead3f4/%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D0%BC%D1%8B%D0%B5%20%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.png)
 ## Порядок команд в терминале: 
 1. Подключение к виртуальной машине - ssh dashleb@84.252.140.107, где для примера: dashleb - имя пользователя в виртуальной машине в Яндекс.Облаке, 84.252.140.107 - IP виртуальной машины
 2. sudo apt install python-is-python3 - установили Python
@@ -18,14 +18,14 @@
 12. source /home/dashleb/python-venvs/bin/activate - активируем виртуальное окружение !!! если все хорошо, должно появиться его название в круглых скобочках - (python-venvs) - перед именем пользователя и названием виртуальной машины
 13. cd /home/dashleb/projects/ - переходим в каталог с проектами
     
-14.1. git clone git@github.com:dashleb33/English_Chat_with_DashLeb_bot.git - клонируем репозиторий с приложением, которое нужно развернуть, если репозиторий собственный либо 
+14.1. git clone git@github.com:dashleb33/English_Chat_with_DashLeb-bot.git - клонируем репозиторий с приложением, которое нужно развернуть, если репозиторий собственный либо 
 
-14.2. git clone https://github.com/dashleb33/English_Chat_with_DashLeb_bot.git - можно по ссылке https, если не планируем репозиторий потом менять и нет прав на него, т.к. он не собственный 
+14.2. git clone https://github.com/dashleb33/English_Chat_with_DashLeb-bot.git - можно по ссылке https, если не планируем репозиторий потом менять и нет прав на него, т.к. он не собственный 
 
 (подробнее см. тут: https://docs.github.com/ru/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls)
 
-15. pip install -r /home/dashleb/projects/English_Chat_with_DashLeb_bot/requirements.txt - устанавливаем библиотеки из файла requirements.txt
-16. cd /home/dashleb/projects/English_Chat_with_DashLeb_bot - перешли к нашему проекту
+15. pip install -r /home/dashleb/projects/English_Chat_with_DashLeb-bot/requirements.txt - устанавливаем библиотеки из файла requirements.txt
+16. cd /home/dashleb/projects/English_Chat_with_DashLeb-bot - перешли к нашему проекту
 17. sudo apt install uvicorn - иногда требуется
 18. uvicorn main:app --host=0.0.0.0 - запускаем приложение из каталога, где лежит проект (параметр --host=0.0.0.0 означает, что приложение запущено на всех портах виртуальной машины)
 http://84.252.140.107:8000/summarization - по этому адресу открывается наше приложение, где 84.252.140.107 - IP виртуальной машины
