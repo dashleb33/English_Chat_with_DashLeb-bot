@@ -1,7 +1,6 @@
-fastapi
-uvicorn
-transformers
-torch
-sentencepiece
-jinja2
-python-multipart
+os
+telebot
+googletrans
+textblob
+gtts
+openai
