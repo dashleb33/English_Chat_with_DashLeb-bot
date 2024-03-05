@@ -1,4 +1,4 @@
-# English Chat with DashLeb-bot - https://t.me/English_Chat_with_DashLeb_bot
+# https://t.me/English_Chat_with_DashLeb_bot
 
 ## Пример развертывания приложения в ранее созданной и активной виртуальной машине в Яндекс.Облаке
 ## Рекомендуемые ресурсы виртуальной машины:
