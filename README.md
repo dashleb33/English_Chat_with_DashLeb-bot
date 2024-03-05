@@ -17,8 +17,11 @@
 11. python -m venv /home/dashleb/python-venvs/- устанавливаем виртуальное окружение
 12. source /home/dashleb/python-venvs/bin/activate - активируем виртуальное окружение !!! если все хорошо, должно появиться его название в круглых скобочках - (python-venvs) - перед именем пользователя и названием виртуальной машины
 13. cd /home/dashleb/projects/ - переходим в каталог с проектами
+    
 14.1. git clone git@github.com:dashleb33/English_Chat_with_DashLeb_bot.git - клонируем репозиторий с приложением, которое нужно развернуть, если репозиторий собственный либо 
+
 14.2. git clone https://github.com/dashleb33/English_Chat_with_DashLeb_bot.git - можно по ссылке https, если не планируем репозиторий потом менять и нет прав на него, т.к. он не собственный (https://docs.github.com/ru/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls)
+
 15. pip install -r /home/dashleb/projects/English_Chat_with_DashLeb_bot/requirements.txt - устанавливаем библиотеки из файла requirements.txt
 16. cd /home/dashleb/projects/English_Chat_with_DashLeb_bot - перешли к нашему проекту
 17. sudo apt install uvicorn - иногда требуется
